@@ -652,6 +652,9 @@ img {
   color: #000;
 }
 
+.blog-list-wrap {
+  border-bottom: 1px solid #6C757D;
+}
 .blog-list-wrap .pagination {
   padding-bottom: clamp(64px, 7vw, 80px);
 }

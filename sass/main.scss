@@ -164,6 +164,7 @@ img {
 // 部落格列表
 
 .blog-list-wrap {
+	border-bottom: 1px solid #6C757D;
 	.pagination {
 		padding-bottom: clamp(64px, 7vw, 80px);
 	}

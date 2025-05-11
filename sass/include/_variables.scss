@@ -1,0 +1,31 @@
+// Color system
+$default: #D8D8D8;
+$primary: #0027D5;
+$primary2 : #4b4b4b;
+
+//全站內文配色與文字尺寸
+$main-size: 18px;
+$main-color:#000;
+
+
+//全站內文連結 
+$link-color: #0027D5; // 引用 _normal.scss a link , 
+$hover-color: lighten($link-color, 15%); // 引用 _normal.scss a:hover
+
+
+
+//main-menu 文字大小與配色
+$main-menu-size:18px; // 引用 include/_mixin.scss 寫了rwd 
+$main-menu-link:#727171;
+$main-menu-hover:#006243;
+
+
+
+//字體樣式 | include/_normal.scss 
+$default-font-family: "Noto Sans TC",
+"微軟正黑體",
+"Microsoft JhengHei",
+\5FAE\8EDF\6B63\9ED1\9AD4,
+"微软雅黑",
+'Arial',
+sans-serif;

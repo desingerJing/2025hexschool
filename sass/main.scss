@@ -290,9 +290,8 @@ img {
 
 
 // footer
-.footer-info {
-	padding-top: 80px;
-	padding-bottom: 80px;
+.footer-info>.wrap {
+	padding: 80px 12px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;

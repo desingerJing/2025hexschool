@@ -10,14 +10,8 @@ img {
 
 .wrap {
 	max-width: $wrap-size;
-	// padding: 0 50px;
+	padding: 0 12px;
 	margin: 0 auto;
-	// @include tablet {
-	// 	padding: 0 40px;
-	// }
-	// @include mobile-xl {
-	// 	padding: 0 30px;
-	// }
 }
 
 
@@ -122,6 +116,7 @@ img {
 	border-bottom: 1px solid #6C757D;
 
 	img {
+		height: 100%;
 
 		@include mobile-xl {
 			aspect-ratio: 1 !important;
@@ -172,24 +167,20 @@ img {
 .blog-list {
 	display: flex;
 	flex-wrap: wrap;
-	gap: clamp(32px, 8.53vw, 80px) 0;
+	gap: clamp(32px, 8.53vw, 80px) 24px;
 	padding-top: 40px;
 	padding-bottom: 40px;
-	margin-left: -12px;
-	margin-right: -12px;
 	@include wrap-width {
 		margin-left: 0;
 		margin-right: 0;
 	}
 
 	.blog-list-item {
-		flex: 0 0 33.333%;
-		max-width: 33.333%;
-		padding-left: 12px;
-		padding-right: 12px;
+		flex: 0 0 calc(33.333% - 16px);
+		max-width: calc(33.333% - 16px);
 		@include tablet {
-			flex: 0 0 50%;
-			max-width: 50%;
+			flex: 0 0 calc(50% - 12px);
+			max-width: calc(50% - 12px);
 		}
 		@include mobile-xl {
 			flex: 0 0 100%;
@@ -255,20 +246,30 @@ img {
 // 搜尋 bar
 .search-content {
 	padding-top: clamp(64px, 7vw, 80px);
-	padding-left: 12px;
-	padding-right: 12px;
 
 	.input-group {
+		font-size: 16px;
+		display: flex;
 		max-width: 416px;
 		padding: 16px;
 		border: 1px solid $primary2;
 		border-radius: 40px;
+		@include mobile-xl {
+			max-width: 100%;
+		}
+
+		button {
+			flex: 0 0 24px;
+		}
 	}
 
 	input {
 		color: $primary2;
 		border: none;
 		padding-left: 10px;
+		background-color: unset;
+		flex: 1 1 auto;
+		width: 1%;
 		&::placeholder {
 			color: $primary2;
 		}
@@ -291,7 +292,8 @@ img {
 
 // footer
 .footer-info>.wrap {
-	padding: 80px 12px;
+	padding-top: clamp(64px, 7vw, 80px);
+	padding-bottom: clamp(64px, 7vw, 80px);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;

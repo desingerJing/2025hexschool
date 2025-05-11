@@ -34,16 +34,6 @@ a {
     }
 }
 
-h1 {
-    font-size: var(--header-title);
-    line-height: 1.2;
-}
-
-h2 {
-    font-size: var(--sub-header-title);
-    margin-bottom: 36px;
-}
-
 h3 {
     font-size: var(--title);
 }
@@ -112,6 +102,10 @@ input:focus {
         color: $primary2;
         padding: 16px;
         background-color: #fff;
+        @include mobile-xl {
+            font-size: 12px;
+            padding: 12px;
+        }
         &:hover {
             color: $primary;
         }

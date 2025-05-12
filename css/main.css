@@ -391,7 +391,7 @@ p {
   margin-bottom: 0;
 }
 p + p {
-  margin-top: 0.7em;
+  margin-top: 16px;
 }
 
 img {
@@ -578,7 +578,7 @@ img {
 }
 .blog-banner .banner-content h1 {
   color: #0027D5;
-  font-size: clamp(52px, 1.38vw, 120px);
+  font-size: clamp(52px, 12vw, 120px);
   margin-top: 0;
   margin-bottom: 12px;
 }
